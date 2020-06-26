@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100|Noto+Serif+TC:200&display=swap&subset=chinese-traditional');
+#img{
+  width: 200px;
+  height: 100px;
+}
+article * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 微軟正黑體,sans-serif;
+    font-size: 19px;
+  }
+
+  h1,h2,h3,h4,h4,h6,div,span {
+    font-family:微軟正黑體;	
+  }
+  
+  p {
+    font-size: 22px;
+    font-family: 微軟正黑體;
+  
+  }
+.Layout{
+    width: 1280px;
+   
+    
+}
+.ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.title2{
+    width: 1280px;
+    height: 200px;
+    
+    color:#b48a4be3 ;
+    
+}
+.t2{
+    width: 1116px;
+    height: 5px;
+
+    margin-top: 5px;
+}
+.headersize{
+    padding: 20px;
+    font-family: 微軟正黑體; 
+}
+.border{
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  border-top-color: dimgray;
+  border-bottom-color:dimgray ;
+}
+.title {
+	font-size:20px;
+  font-weight: bold;
+  color:#b48a4be3;
+}
+.border2{
+    width: 1260px;
+    height: 5px;
+    border-bottom-style:dotted;
+    border-bottom-color: dimgray;
+}
+.title_img{
+    width: 100px;
+    height: 100px;
+    background-color:#b48a4be3;
+    border-radius:999em;
+    
+}
+.frow {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.text_margin{
+margin-top: 20px;
+}
+a {
+  text-decoration:none;
+}
+.title_text{
+   
+  text-decoration:none;
+   font-family:微軟正黑體;
+   color:#b48a4be3;
+   
+}
+.title_text:hover{
+  background-color: #92713ee3;
+  color: white;  
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.margin{
+    padding:50px 82px;
+}
+.left{
+  margin: 2px;
+  padding-top: 50px;
+
+}
+.back{
+  width: 80px;
+  text-decoration:none;
+  color: #b48a4be3;
+}
+.back:hover{
+  color: #dfcbade3;
+}
+.p1{
+    height: 620px;
+    width: 1280px;  
+    
+}
+
+.mapimg{
+    width: 400px;
+    height: 400px;
+    
+}
+.Explanation{
+    width: 600px;
+    margin-top: 20px;
+   
+}
+.bottow40{
+    margin-bottom: 40px;
+}
+
+
+.a{
+    width: 50px;
+    height: 50px;
+}
+
+.w200{
+    width: 150px;
+    margin-left: 50px;
+    
+}
+.top{
+    margin: 100px 82px;
+    
+}
+
+.at{
+   
+    padding-right: 20px ;
+    padding-left: 20px ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-color: #b48a4be3;
+    border-style: solid;
+    border-radius:10em;
+    color: #b48a4be3;
+    text-decoration:none;
+}
+.at:hover{
+  background-color: #92713ee3;
+  
+  color: white;  
+}
+.right{
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+h1{
+    font-size: 30px;
+}
+.eng{
+    color: rgba(141, 85, 40, 0.616);
+    
+}
+.text{
+   justify-content: space-between;   
+}
+
+footer{
+  margin-top: 20px;
+}
+.kk{
+  width: 0px;
+  height: 235px;
+  background-color:#505e8a ;
+}
+.fristpage{
+  position:absolute;
+    background-color: white;
+    width: 1280px;
+    height: 1656px;
+    display: flex;
+    justify-content: center;
+    
+    z-index:100;
+}
+
+.fristpage img {
+  width: 250px;
+  height: 200px;
+}
+.mapicon{
+  margin-top: 200px;
+  width:200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+.navbar-brand img {
+	height: 50px;
+}
+
+@media (min-width:320px) {
+/*nav選單*/
+	.navbar{
+	padding-left:20px!important;
+	padding-right:150px!important; 
+  background-color: #ffffff;
+	}
+  .navbar-nav li
+  {
+    text-align: center;
+    color: #375d81;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 30px;
+  }
+  .navbar-nav li:hover
+  {
+    text-align: center;
+    color: #375d81;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 30px;
+  }
+}
+
+.navbar .btn{
+  border: solid 1px #a0c4fa;
+  background-color: #a0c4fa;
+  width: 150px;
+  border-radius: 0%;
+  box-shadow: 4px  5px rgba(255, 255, 255, 0.363);
+
+  -webkit-transition: transform;
+	transition: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  
+}
+
+
+.navbar .btn:hover{
+  border: solid 1px #9bbae9; 
+  background-color:  #9bbae9;
+
+  transform: translate(10px,0px);
+}
+
+
+.navbar .btn a{
+  text-decoration:none;
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: bold;
+  line-height:40px;
+}
+  
+
+
+.box_footer {
+  margin-top: 10px;
+
+    background-color: #505e8a;
+    text-align: center;
+    line-height: 60px;
+    justify-content:flex-start;
+    text-align: left;
+  }
+
+.box_footer p{
+    padding: 0px;
+    width: 500px;
+    height: 11px;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    font-weight: 1000px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.box_footer .btn-contact p {
+  line-height: 40px;
+  padding: 25px 0;
+}
+
+.box_footer .btn-contact img{
+  filter:invert(100%);
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.box_footer .btn-social{
+  height: 235px;
+  float: left;
+  width: 200px;
+  margin-left: 60px;
+}
+.box_footer .btn-social p {
+  position: relative;
+  top: -250px;
+  margin-top: 58px;
+  margin-left: 170px;
+  
+}
+.box_footer .btn-social img{
+  filter:invert(100%);
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 30px;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.box_footer .btn-social .btn{
+  border: solid 1px #9bbae9; 
+  background-color:  #9bbae9;
+  text-decoration:none;
+  width: 200px;
+  box-shadow: 4px  5px rgba(255, 255, 255, 0);
+  border-radius: 0%;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+
+  -webkit-transition: transform;
+	transition: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.box_footer .btn-social .btn:hover{
+  border: solid 1px #a0c4fa;
+  background-color: #a0c4fa;
+  
+  transform: translate(10px,0px);
+}
+
+.box_footer .logo img
+{
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 60%;
+
+}
+
+.box_footer .btn-social .btn a{
+  text-decoration:none;
+  color: #ffffff;
+}
+
+
