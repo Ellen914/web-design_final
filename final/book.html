@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap">
+
+  <!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="jquery-3.5.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="js/jQuery2.js"></script>
+  <!-- <script src="js/script3.js"></script> -->
+  <!-- <script src="js/book.js"></script> -->
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      minDate: 0, maxDate: "+1Y "
+      
+    });
+    $( "#datepicker2" ).datepicker({
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      minDate: +1, maxDate: "+1Y "
+    });
+  });
+  </script>
+  <style>
+      .select{
+          width: 50% !important;
+      }
+      .b{
+          padding-top: 20px;
+      }
+      .result{
+          color: aqua;
+      }
+  </style>
+</head>
+<body>
+<div id="result" style="display: flex;">
+    <h3>USER:</h3>
+    <h4 class="user-name" id="user-name">aaaaaaaa</h4>
+</div>
+<p>入住日期：<input type="text" id="datepicker"></p>
+<p>退房日期：<input type="text" id="datepicker2"></p>
+<div class="input-group mb-3 select">
+    <div class="input-group-prepend">   
+      <label class="input-group-text" for="inputGroupSelect01">房型</label>
+    </div>
+    <select class="custom-select" id="inputGroupSelect01" onchange="changeFunc()">
+      <option selected>Choose...</option>
+      <option value="1">豪華客房</option>
+      <option value="2">菁英客房</option>
+      <option value="3">薈萃客房</option>
+      <option value="4">當代三人房</option>
+      <option value="5">經典家庭房</option>
+      <option value="6">卓越套房</option>
+      <option value="7">行政套房</option>
+      <option value="8">寰宇套房</option>
+    </select>
+</div>
+<div>
+    <img id="room" src="" alt="" width="50%">
+</div>
+<div class="b">
+<button type="button" class="btn btn-primary" id="send">送出</button>
+<!-- <button type="button" class="btn btn-primary" id="test">test</button> -->
+</div>
+<script>
+    function changeFunc() {
+        var selectBox = document.getElementById("inputGroupSelect01");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        if(selectedValue==1){
+            document.getElementById("user-name").innerHTML = "11111";
+            document.getElementById("room").src = "img/img2/a.jpg";
+        }
+        else if(selectedValue==2){
+            document.getElementById("room").src = "img/img2/b.jpg";
+        }
+        else if(selectedValue==3){
+            document.getElementById("room").src = "img/img2/c.jpg";
+        }
+        else if(selectedValue==4){
+            document.getElementById("room").src = "img/img2/d.jpg";
+        }
+        else if(selectedValue==5){
+            document.getElementById("room").src = "img/img2/e.jpg";
+        }
+        else if(selectedValue==6){
+            document.getElementById("room").src = "img/img2/f.jpg";
+        }
+        else if(selectedValue==7){
+            document.getElementById("room").src = "img/img2/g.jpg";
+        }
+        else if(selectedValue==8){
+            document.getElementById("room").src = "img/img2/h.jpg";
+        }
+    }
+</script>
+</body>
+</html>
