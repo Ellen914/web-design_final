@@ -109,7 +109,7 @@ h1,h2,h3,h4,h4,h6,div,span {
 .food-top{
     margin-top: 76px;
     position: center;
-    background-image: url(/img/foodtop.jpg);
+    background-image: url(../img/foodtop.jpg);
     background-repeat: no-repeat;
     width: 1280px;
     height: 400px;
